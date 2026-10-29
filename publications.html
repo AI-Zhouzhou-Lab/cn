@@ -1,1 +1,217 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>论文 | 郑洲洲课题组</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: "Microsoft YaHei", "PingFang SC", -apple-system, sans-serif; line-height: 1.8; color: #333; background-color: #f8f9fa; }
+        a { color: #1a73e8; text-decoration: none; }
+        a:hover { text-decoration: underline; }
 
+        header { background-color: #ffffff; position: sticky; top: 0; z-index: 100; box-shadow: 0 2px 4px rgba(0,0,0,0.05); }
+        .nav-container { max-width: 1200px; margin: 0 auto; padding: 15px 30px; display: flex; justify-content: space-between; align-items: center; }
+        .logo { font-size: 1.3em; font-weight: 700; color: #222; display: flex; align-items: center; }
+        nav ul { list-style: none; display: flex; gap: 20px; flex-wrap: wrap;}
+        nav a { color: #333; font-size: 0.95em; font-weight: 500; transition: color 0.2s; }
+        nav a:hover, nav a.active { color: #c8232c; text-decoration: none; }
+
+        .main-container { max-width: 1000px; margin: 50px auto; padding: 0 30px; }
+        .page-title { font-size: 48px; font-weight: 700; color: #222; border-left: 8px solid #e5231b; padding-left: 15px; margin-bottom: 15px; line-height: 1.2; }
+        .subtitle { font-size: 1.1em; color: #333; margin-bottom: 40px; padding-left: 23px; }
+        .subtitle a { color: #0056b3; }
+        .section-title { font-size: 1.8em; font-weight: 400; color: #222; margin-bottom: 15px; }
+        .section-title span { color: #888; font-size: 0.8em; }
+
+        .pub-table { width: 100%; border: 1px solid #dcdcdc; margin-bottom: 50px; }
+        .pub-header { display: flex; background-color: #5f6368; color: #fff; font-weight: 600; font-size: 1.05em; }
+        .pub-header .col-no, .pub-header .col-info { padding: 12px 15px; }
+        .pub-row { display: flex; border-bottom: 1px solid #eaeaea; }
+        .pub-row:last-child { border-bottom: none; }
+        .pub-row:nth-child(odd) { background-color: #f9f9f9; }
+        .pub-row:nth-child(even) { background-color: #ffffff; }
+
+        .col-no { flex: 0 0 70px; text-align: center; font-size: 1.1em; display: flex; align-items: center; justify-content: center; border-right: 1px solid #eaeaea; color: #333; }
+        .col-info { flex: 1; padding: 20px 25px; }
+        .pub-title { font-size: 1.15em; color: #1a73e8; text-decoration: none; display: inline-block; margin-bottom: 10px; line-height: 1.4; }
+        .pub-title:hover { text-decoration: underline; }
+        .pub-meta { display: flex; flex-wrap: wrap; gap: 20px; color: #666; font-size: 0.95em; }
+        .meta-item { display: flex; align-items: center; gap: 6px; }
+        .meta-item i { color: #888; font-size: 0.9em; }
+        .highlight { background-color: #ffeeba; color: #856404; padding: 2px 6px; border-radius: 3px; font-size: 0.75em; font-weight: bold; vertical-align: middle; margin-left: 8px; }
+
+        @media (max-width: 900px) {
+            .nav-container { flex-direction: column; padding: 15px; gap: 15px; }
+            nav ul { justify-content: center; gap: 10px; }
+            .pub-header { display: none; }
+            .pub-row { flex-direction: column; }
+            .col-no { flex: none; width: 100%; text-align: left; padding: 10px 25px 0 25px; border-right: none; font-size: 0.9em; color: #888; }
+            .col-no::before { content: "论文 #"; }
+            .col-info { padding: 10px 25px 20px 25px; }
+            .pub-meta { flex-direction: column; gap: 8px; }
+            .page-title { font-size: 36px; }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="nav-container">
+            <div class="logo"><span style="color: #c8232c; font-weight: 800; font-family: 'Times New Roman', serif; letter-spacing: 1px; margin-right: 8px;">HUNAU</span> 郑洲洲课题组</div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">首页</a></li>
+                    <li><a href="news.html">新闻</a></li>
+                    <li><a href="team.html">团队</a></li>
+                    <li><a href="leader.html">负责人</a></li>
+                    <li><a href="publications.html" class="active">论文</a></li>
+                    <li><a href="teaching.html">教学</a></li>
+                    <li><a href="dataset.html">数据集</a></li>
+                    <li><a href="certificates.html">证书</a></li>
+                    <li><a href="joinus.html">加入我们</a></li>
+                    <li><a href="../index.html" style="color: #1a73e8; font-weight: bold; margin-left: 10px;">English</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="main-container">
+        <h1 class="page-title">学术论文</h1>
+        <p class="subtitle">欢迎访问我们的 <a href="https://scholar.google.com/citations?user=hQRJr38AAAAJ&hl=en" target="_blank">Google Scholar</a> 主页获取最新成果。</p>
+        
+        <h2 class="section-title">期刊论文 <span>( 11 )</span></h2>
+        
+        <div class="pub-table">
+            <div class="pub-header">
+                <div class="col-no">序号</div>
+                <div class="col-info">文章信息</div>
+            </div>
+            
+            <div class="pub-row">
+                <div class="col-no">11</div>
+                <div class="col-info">
+                    <a href="https://doi.org/10.1016/j.atech.2026.102504" target="_blank" class="pub-title">A review of visual occlusion resolution in agricultural environments: Algorithms, applications, and future trends</a>
+                    <div class="pub-meta">
+                        <span class="meta-item"><i class="fas fa-user"></i> Haiyang Chen, Mingliang Wu, Wei Quan, Xiaohu Jiang, Fanggang Shi, <strong>Zhouzhou Zheng*</strong></span>
+                        <span class="meta-item"><i class="fas fa-bookmark"></i> Smart Agricultural Technology</span>
+                        <span class="meta-item"><i class="fas fa-calendar-alt"></i> 2026</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pub-row">
+                <div class="col-no">10</div>
+                <div class="col-info">
+                    <a href="#" class="pub-title">Autonomous Navigation of Orchard Harvesting Robot via Light-weight Salient Object Detection</a>
+                    <div class="pub-meta">
+                        <span class="meta-item"><i class="fas fa-user"></i> <strong>Zheng Zhouzhou</strong>, Zheng Bin, Tang Lewei*, et al.</span>
+                        <span class="meta-item"><i class="fas fa-bookmark"></i> Smart Agricultural Technology</span>
+                        <span class="meta-item"><i class="fas fa-calendar-alt"></i> 2026</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="pub-row">
+                <div class="col-no">9</div>
+                <div class="col-info">
+                    <a href="#" class="pub-title">抓摇式设施冬枣摘熟留青振动采收装置参数优化与试验</a>
+                    <div class="pub-meta">
+                        <span class="meta-item"><i class="fas fa-user"></i> <strong>郑洲洲</strong>, 胡耀华, 赵鹏飞, 董建鑫, 黄玉祥*</span>
+                        <span class="meta-item"><i class="fas fa-bookmark"></i> 农业机械学报 (EI)</span>
+                        <span class="meta-item"><i class="fas fa-calendar-alt"></i> 2025</span>
+                    </div>
+                </div>
+            </div>
+            <div class="pub-row">
+                <div class="col-no">8</div>
+                <div class="col-info">
+                    <a href="#" class="pub-title">Graph Transformer with spatial-spectral features fusion for hyperspectral image classification</a>
+                    <div class="pub-meta">
+                        <span class="meta-item"><i class="fas fa-user"></i> <strong>Zheng Zhouzhou</strong>, Sun Shangpeng, Huang Yuxiang*, et al.</span>
+                        <span class="meta-item"><i class="fas fa-bookmark"></i> Expert Systems with Applications</span>
+                        <span class="meta-item"><i class="fas fa-calendar-alt"></i> 2025</span>
+                    </div>
+                </div>
+            </div>
+            <div class="pub-row">
+                <div class="col-no">7</div>
+                <div class="col-info">
+                    <a href="#" class="pub-title">Characterising vibration patterns of winter jujube trees to optimise automated fruit harvesting</a>
+                    <div class="pub-meta">
+                        <span class="meta-item"><i class="fas fa-user"></i> <strong>Zheng Zhouzhou</strong>, Sun Shangpeng, Huang Yuxiang*, et al.</span>
+                        <span class="meta-item"><i class="fas fa-bookmark"></i> Biosystems Engineering</span>
+                        <span class="meta-item"><i class="fas fa-calendar-alt"></i> 2024</span>
+                    </div>
+                </div>
+            </div>
+            <div class="pub-row">
+                <div class="col-no">6</div>
+                <div class="col-info">
+                    <a href="#" class="pub-title">A novel jujube tree trunk and branch salient object detection method for catch-and-shake robotic visual perception</a>
+                    <div class="pub-meta">
+                        <span class="meta-item"><i class="fas fa-user"></i> <strong>Zheng Zhouzhou</strong>, Sun Shangpeng, Huang Yuxiang*, et al.</span>
+                        <span class="meta-item"><i class="fas fa-bookmark"></i> Expert Systems with Applications</span>
+                        <span class="meta-item"><i class="fas fa-calendar-alt"></i> 2024</span>
+                    </div>
+                </div>
+            </div>
+            <div class="pub-row">
+                <div class="col-no">5</div>
+                <div class="col-info">
+                    <a href="#" class="pub-title">Vibration response characteristics of Jujube trees based on finite element method and structure-from-motion</a>
+                    <div class="pub-meta">
+                        <span class="meta-item"><i class="fas fa-user"></i> Hu Yaohua*, <strong>Zheng Zhouzhou*</strong>, Yu Chenhao, et al.</span>
+                        <span class="meta-item"><i class="fas fa-bookmark"></i> Scientia Horticulturae</span>
+                        <span class="meta-item"><i class="fas fa-calendar-alt"></i> 2024</span>
+                    </div>
+                </div>
+            </div>
+            <div class="pub-row">
+                <div class="col-no">4</div>
+                <div class="col-info">
+                    <a href="#" class="pub-title">AGHRNet: An attention ghost-HRNet for confirmation of catch-and-shake locations in jujube fruits vibration harvesting <span class="highlight">高被引</span></a>
+                    <div class="pub-meta">
+                        <span class="meta-item"><i class="fas fa-user"></i> <strong>Zheng Zhouzhou</strong>, Hu Yaohua, Huang Yuxiang*, et al.</span>
+                        <span class="meta-item"><i class="fas fa-bookmark"></i> Computers and Electronics in Agriculture</span>
+                        <span class="meta-item"><i class="fas fa-calendar-alt"></i> 2023</span>
+                    </div>
+                </div>
+            </div>
+            <div class="pub-row">
+                <div class="col-no">3</div>
+                <div class="col-info">
+                    <a href="#" class="pub-title">AFFU-Net: Attention feature fusion U-Net with hybrid loss for winter jujube crack detection</a>
+                    <div class="pub-meta">
+                        <span class="meta-item"><i class="fas fa-user"></i> <strong>Zheng Zhouzhou</strong>, Hu Yaohua, Huang Yuxiang*, et al.</span>
+                        <span class="meta-item"><i class="fas fa-bookmark"></i> Computers and Electronics in Agriculture</span>
+                        <span class="meta-item"><i class="fas fa-calendar-alt"></i> 2022</span>
+                    </div>
+                </div>
+            </div>
+            <div class="pub-row">
+                <div class="col-no">2</div>
+                <div class="col-info">
+                    <a href="#" class="pub-title">Real-time detection of winter jujubes based on improved YOLOX-nano network</a>
+                    <div class="pub-meta">
+                        <span class="meta-item"><i class="fas fa-user"></i> <strong>Zheng Zhouzhou</strong>, Hu Yaohua, Huang Yuxiang*, et al.</span>
+                        <span class="meta-item"><i class="fas fa-bookmark"></i> Remote Sensing</span>
+                        <span class="meta-item"><i class="fas fa-calendar-alt"></i> 2022</span>
+                    </div>
+                </div>
+            </div>
+            <div class="pub-row">
+                <div class="col-no">1</div>
+                <div class="col-info">
+                    <a href="#" class="pub-title">HLU²-Net: a residual U-structure embedded U-Net with hybrid loss for tire defect inspection</a>
+                    <div class="pub-meta">
+                        <span class="meta-item"><i class="fas fa-user"></i> <strong>Zheng Zhouzhou</strong>, Yang Huanbo, Zhang Yan*, et al.</span>
+                        <span class="meta-item"><i class="fas fa-bookmark"></i> IEEE Transactions on Instrumentation and Measurement</span>
+                        <span class="meta-item"><i class="fas fa-calendar-alt"></i> 2021</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
