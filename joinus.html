@@ -1,1 +1,83 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>加入我们 | 郑洲洲课题组</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: "Microsoft YaHei", "PingFang SC", -apple-system, sans-serif; line-height: 1.8; color: #333; background-color: #f8f9fa; }
+        a { color: #1a73e8; text-decoration: none; }
+        a:hover { text-decoration: underline; }
 
+        header { background-color: #ffffff; position: sticky; top: 0; z-index: 100; box-shadow: 0 2px 4px rgba(0,0,0,0.05); }
+        .nav-container { max-width: 1200px; margin: 0 auto; padding: 15px 30px; display: flex; justify-content: space-between; align-items: center; }
+        .logo { font-size: 1.3em; font-weight: 700; color: #222; display: flex; align-items: center; }
+        nav ul { list-style: none; display: flex; gap: 20px; flex-wrap: wrap;}
+        nav a { color: #333; font-size: 0.95em; font-weight: 500; transition: color 0.2s; }
+        nav a:hover, nav a.active { color: #c8232c; text-decoration: none; }
+
+        .main-container { max-width: 1100px; margin: 50px auto; padding: 0 30px; }
+        .page-title { font-size: 48px; font-weight: 700; color: #222; border-left: 8px solid #e5231b; padding-left: 15px; margin-bottom: 50px; line-height: 1.2; }
+
+        .join-container { display: flex; align-items: center; justify-content: space-between; gap: 50px; }
+        .join-photo-wrapper { flex: 0 0 45%; width: 100%; }
+        .join-photo { width: 100%; border-radius: 8px; box-shadow: 0 8px 20px rgba(0,0,0,0.1); object-fit: cover; aspect-ratio: 4/3; display: block; }
+
+        .join-text { flex: 1; font-size: 1.15em; line-height: 1.9; color: #444; text-align: left; }
+        .join-text p { margin-bottom: 25px; }
+        .highlight-bold { font-weight: 600; color: #222; }
+
+        @media (max-width: 900px) {
+            .nav-container { flex-direction: column; padding: 15px; gap: 15px; }
+            nav ul { justify-content: center; gap: 10px; }
+            .page-title { font-size: 36px; }
+            .join-container { flex-direction: column; gap: 40px; }
+            .join-photo-wrapper { flex: auto; width: 100%; }
+            .join-text { font-size: 1.05em; }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="nav-container">
+            <div class="logo"><span style="color: #c8232c; font-weight: 800; font-family: 'Times New Roman', serif; letter-spacing: 1px; margin-right: 8px;">HUNAU</span> 郑洲洲课题组</div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">首页</a></li>
+                    <li><a href="news.html">新闻</a></li>
+                    <li><a href="team.html">团队</a></li>
+                    <li><a href="leader.html">负责人</a></li>
+                    <li><a href="publications.html">论文</a></li>
+                    <li><a href="teaching.html">教学</a></li>
+                    <li><a href="dataset.html">数据集</a></li>
+                    <li><a href="certificates.html">证书</a></li>
+                    <li><a href="joinus.html" class="active">加入我们</a></li>
+                    <li><a href="../index.html" style="color: #1a73e8; font-weight: bold; margin-left: 10px;">English</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="main-container">
+        <h1 class="page-title">加入我们 !</h1>
+
+        <div class="join-container">
+            <div class="join-photo-wrapper">
+                <img src="https://via.placeholder.com/800x600?text=Lab+Group+Photo" alt="团队合影" class="join-photo">
+            </div>
+
+            <div class="join-text">
+                <p>课题组正积极招募具有农业工程、农业机器人、机器视觉和深度学习背景的优秀硕士、博士研究生及科研实习生。</p>
+                
+                <p>同时，我们面向全校招募对机器人、自动控制及图像识别方向感兴趣的本科生。期待充满热情的你加入我们，一起参与农业机器人的研发与测试。进组后，你不仅能获得农业机器人开发的实操经验，还有机会参与重大科技竞赛、获得综测加分，并大幅提升你的保研/考研简历竞争力，共同探索智能农业的无限可能。</p>
+                
+                <p>如果你有兴趣加入我们，请将你的简历和一份简要的研究兴趣说明发送至郑洲洲博士的邮箱：<a href="mailto:zhengzz@hunau.edu.cn">zhengzz@hunau.edu.cn</a>，邮件主题请注明：</p>
+                
+                <p><span class="highlight-bold">'意向岗位 – [你的姓名]'</span></p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
