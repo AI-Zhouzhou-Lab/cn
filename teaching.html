@@ -1,1 +1,77 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>教学 | 郑洲洲课题组</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: "Microsoft YaHei", "PingFang SC", -apple-system, sans-serif; line-height: 1.8; color: #333; background-color: #f8f9fa; }
+        header { background-color: #ffffff; position: sticky; top: 0; z-index: 100; box-shadow: 0 2px 4px rgba(0,0,0,0.05); }
+        .nav-container { max-width: 1200px; margin: 0 auto; padding: 15px 30px; display: flex; justify-content: space-between; align-items: center; }
+        .logo { font-size: 1.3em; font-weight: 700; color: #222; display: flex; align-items: center; }
+        nav ul { list-style: none; display: flex; gap: 20px; flex-wrap: wrap;}
+        nav a { color: #333; font-size: 0.95em; font-weight: 500; transition: color 0.2s; }
+        nav a:hover, nav a.active { color: #c8232c; text-decoration: none; }
 
+        .main-container { max-width: 1000px; margin: 50px auto; padding: 0 30px; }
+        .page-title { font-size: 48px; font-weight: 700; color: #222; border-left: 8px solid #e5231b; padding-left: 15px; margin-bottom: 50px; line-height: 1.2; }
+        
+        .course-list { list-style: none; margin-top: 30px; }
+        .course-item { display: flex; margin-bottom: 20px; font-size: 1.1em; color: #333; line-height: 1.6; }
+        .course-code { flex: 0 0 150px; font-weight: 500; color: #555; }
+        .course-desc { flex: 1; }
+
+        @media (max-width: 900px) {
+            .nav-container { flex-direction: column; padding: 15px; gap: 15px; }
+            nav ul { justify-content: center; gap: 10px; }
+            .page-title { font-size: 36px; }
+            .course-item { flex-direction: column; gap: 5px; }
+            .course-code { flex: none; font-size: 0.9em; color: #888; }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="nav-container">
+            <div class="logo"><span style="color: #c8232c; font-weight: 800; font-family: 'Times New Roman', serif; letter-spacing: 1px; margin-right: 8px;">HUNAU</span> 郑洲洲课题组</div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">首页</a></li>
+                    <li><a href="news.html">新闻</a></li>
+                    <li><a href="team.html">团队</a></li>
+                    <li><a href="leader.html">负责人</a></li>
+                    <li><a href="publications.html">论文</a></li>
+                    <li><a href="teaching.html" class="active">教学</a></li>
+                    <li><a href="dataset.html">数据集</a></li>
+                    <li><a href="certificates.html">证书</a></li>
+                    <li><a href="joinus.html">加入我们</a></li>
+                    <li><a href="../index.html" style="color: #1a73e8; font-weight: bold; margin-left: 10px;">English</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="main-container">
+        <h1 class="page-title">教学课程</h1>
+
+        <ul class="course-list">
+            <li class="course-item">
+                <div class="course-code">课程 101</div>
+                <div class="course-desc">图像识别与农业机器视觉基础 (32课时)</div>
+            </li>
+            
+            <li class="course-item">
+                <div class="course-code">课程 102</div>
+                <div class="course-desc">智能农机装备 (64课时)</div>
+            </li>
+            
+            <li class="course-item">
+                <div class="course-code">课程 103</div>
+                <div class="course-desc">机械故障诊断与决策 (32课时)</div>
+            </li>
+        </ul>
+    </div>
+</body>
+</html>
