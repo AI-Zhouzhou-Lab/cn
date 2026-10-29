@@ -1,1 +1,214 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>团队 | 郑洲洲课题组</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: "Microsoft YaHei", "PingFang SC", -apple-system, sans-serif; line-height: 1.8; color: #333; background-color: #f8f9fa; }
+        a { color: #1a73e8; text-decoration: none; }
+        a:hover { text-decoration: underline; }
 
+        header { background-color: #ffffff; position: sticky; top: 0; z-index: 100; box-shadow: 0 2px 4px rgba(0,0,0,0.05); }
+        .nav-container { max-width: 1200px; margin: 0 auto; padding: 15px 30px; display: flex; justify-content: space-between; align-items: center; }
+        .logo { font-size: 1.3em; font-weight: 700; color: #222; display: flex; align-items: center; }
+        nav ul { list-style: none; display: flex; gap: 20px; flex-wrap: wrap;}
+        nav a { color: #333; font-size: 0.95em; font-weight: 500; transition: color 0.2s; }
+        nav a:hover, nav a.active { color: #c8232c; text-decoration: none; }
+
+        .main-container { max-width: 1000px; margin: 50px auto; padding: 0 30px; }
+        .page-title { font-size: 48px; font-weight: 700; color: #222; border-left: 8px solid #e5231b; padding-left: 15px; margin-bottom: 50px; line-height: 1.2; }
+
+        .team-section { margin-bottom: 60px; }
+        .section-header { display: flex; align-items: center; border-bottom: 2px solid #e5231b; padding-bottom: 10px; margin-bottom: 30px; }
+        .section-header i { color: #e5231b; font-size: 1.5em; margin-right: 15px; }
+        .section-header h2 { font-size: 1.8em; font-weight: 700; color: #222; margin-right: 15px; }
+        .section-header span { font-size: 1.2em; color: #777; }
+
+        .member-item { display: flex; gap: 30px; margin-bottom: 50px; }
+        .member-photo { flex: 0 0 200px; height: 250px; border-radius: 8px; object-fit: cover; box-shadow: 0 4px 10px rgba(0,0,0,0.1); }
+        .member-info { flex: 1; }
+        .member-name { font-size: 1.6em; font-weight: 600; color: #333; margin-bottom: 15px; }
+        .member-desc { color: #555; font-size: 1.05em; line-height: 1.9; text-align: justify; }
+
+        @media (max-width: 900px) {
+            .nav-container { flex-direction: column; padding: 15px; gap: 15px; }
+            nav ul { justify-content: center; gap: 10px; }
+            .member-item { flex-direction: column; gap: 20px; align-items: center; }
+            .member-photo { width: 200px; }
+            .member-info { text-align: center; }
+            .member-desc { text-align: left; }
+            .page-title { font-size: 36px; }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="nav-container">
+            <div class="logo"><span style="color: #c8232c; font-weight: 800; font-family: 'Times New Roman', serif; letter-spacing: 1px; margin-right: 8px;">HUNAU</span> 郑洲洲课题组</div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">首页</a></li>
+                    <li><a href="news.html">新闻</a></li>
+                    <li><a href="team.html" class="active">团队</a></li>
+                    <li><a href="leader.html">负责人</a></li>
+                    <li><a href="publications.html">论文</a></li>
+                    <li><a href="teaching.html">教学</a></li>
+                    <li><a href="dataset.html">数据集</a></li>
+                    <li><a href="certificates.html">证书</a></li>
+                    <li><a href="joinus.html">加入我们</a></li>
+                    <li><a href="../index.html" style="color: #1a73e8; font-weight: bold; margin-left: 10px;">English</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="main-container">
+        <h1 class="page-title">团队成员</h1>
+
+        <div class="team-section">
+            <div class="section-header">
+                <i class="fas fa-graduation-cap"></i>
+                <h2>教师团队</h2>
+                <span>Faculty</span>
+            </div>
+            <div class="member-item">
+                <img src="zheng.jpg" alt="郑洲洲" class="member-photo">
+                <div class="member-info">
+                    <h3 class="member-name">郑洲洲 博士</h3>
+                    <div class="member-desc">
+                        湖南农业大学机电工程学院讲师、硕士生导师。2025年6月获西北农林科技大学农业机械化工程博士学位。2023年至2024年，获国家留学基金委（CSC）资助赴加拿大麦吉尔大学进行博士联合培养。
+                        <br><br>
+                        主要研究方向为果园采摘机器人、果园信息感知技术与果树表型解析。以第一作者在《Computers and Electronics in Agriculture》、《Expert Systems with Applications》等国际顶级期刊发表SCI论文10余篇，其中中科院一区论文6篇，累计影响因子87.1。
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="team-section">
+            <div class="section-header">
+                <i class="fas fa-user-graduate"></i>
+                <h2>博士研究生</h2>
+                <span>PhD Students</span>
+            </div>
+            <div class="member-item">
+                <img src="Fujiahui.jpg" alt="付嘉慧" class="member-photo">
+                <div class="member-info">
+                    <h3 class="member-name">付嘉慧</h3>
+                    <div class="member-desc">
+                        农业工程与信息技术专业硕士毕业。研究方向为油茶果振动采收机器人，致力于利用计算机技术解决油茶果采摘机器人采收过程中遇到的相关问题。
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="team-section">
+            <div class="section-header">
+                <i class="fas fa-user-friends"></i>
+                <h2>硕士研究生</h2>
+                <span>Master's Students</span>
+            </div>
+            
+            <div class="member-item">
+                <img src="Zhengbin.jpg" alt="郑彬" class="member-photo">
+                <div class="member-info">
+                    <h3 class="member-name">郑彬</h3>
+                    <div class="member-desc">
+                        拥有湖南农业大学计算机科学学士学位。目前的研究重点是利用计算机视觉和深度学习技术对植物进行智能识别、计数与估产研究，服务于智慧农业。目前已在《Smart Agricultural Technology》发表相关论文一篇。
+                    </div>
+                </div>
+            </div>
+
+            <div class="member-item">
+                <img src="Chenbiao.jpg" alt="陈标" class="member-photo">
+                <div class="member-info">
+                    <h3 class="member-name">陈标</h3>
+                    <div class="member-desc">
+                        正在攻读湖南农业大学机电工程学院农业工程与信息技术（农业机械及智能装备方向）硕士学位。研究重点是油茶果和花苞的振动脱落机理，特别研究了手持式油茶果振动采收装置。
+                    </div>
+                </div>
+            </div>
+
+            <div class="member-item">
+                <img src="Wuyujie.jpg" alt="武雨洁" class="member-photo">
+                <div class="member-info">
+                    <h3 class="member-name">武雨洁</h3>
+                    <div class="member-desc">
+                        本科毕业于商丘工学院机械电子工程专业，现为湖南农业大学农业工程与信息技术专业在读硕士研究生。目前主要研究方向为农业计算机视觉，聚焦于基于图像增强与分割技术的复杂农田环境下油菜生长周期监测。致力于将机械电子的工程背景与深度学习算法相融合，克服复杂农田光照与遮挡干扰，实现对油菜生长状态的精准感知与解析。
+                    </div>
+                </div>
+            </div>
+
+            <div class="member-item">
+                <img src="Tianwenbiao.jpg" alt="田文标" class="member-photo">
+                <div class="member-info">
+                    <h3 class="member-name">田文标</h3>
+                    <div class="member-desc">
+                        本科就读于湖南农业大学农业机械化及其自动化专业，现于湖南农业大学攻读硕士研究生。擅长嵌入式软硬件一体化建设，能够将农业机械化工程背景与深度学习算法相融合，贯通从视觉识别、参数感知到嵌入式执行端的系统开发，致力于提升农业装备的智能化水平与作业效率。
+                    </div>
+                </div>
+            </div>
+
+            <div class="member-item">
+                <img src="Zhoujunjie.jpg" alt="周俊杰" class="member-photo">
+                <div class="member-info">
+                    <h3 class="member-name">周俊杰</h3>
+                    <div class="member-desc">
+                        本科就读于湖南农业大学农业机械化及其自动化专业，现为湖南农业大学机械专业在读硕士研究生。主要从事油茶果振动采收装备方向研究，擅长机械结构与原理设计，致力于通过机械振动方案解决油茶果机械化采收难题。
+                    </div>
+                </div>
+            </div>
+
+            <div class="member-item">
+                <img src="Liujunyu.jpg" alt="刘峻宇" class="member-photo">
+                <div class="member-info">
+                    <h3 class="member-name">刘峻宇</h3>
+                    <div class="member-desc">
+                        本科就读于西藏民族大学网络工程专业，现为湖南农业大学机械专业在读硕士研究生。专注于农业机械臂识别采摘机器人研发，擅长视觉感知与机械臂控制。能够基于ROS2搭建视觉-机械臂协同系统，完成目标识别定位、手眼标定、抓取位姿估计与运动控制。同时具备STM32单片机开发经验，贯通视觉识别、控制算法到嵌入式执行端的系统联调，致力于提升农业采摘机器人的识别准确率与作业效率。
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="team-section">
+            <div class="section-header">
+                <i class="fas fa-book-open-reader"></i>
+                <h2>本科生</h2>
+                <span>Undergraduates</span>
+            </div>
+            
+            <div class="member-item">
+                <img src="Lijiachen.jpg" alt="李佳辰" class="member-photo">
+                <div class="member-info">
+                    <h3 class="member-name">李佳辰</h3>
+                    <div class="member-desc">
+                        湖南农业大学农业机械化及其自动化在读本科生。过去参与并研究过点云视觉神经网络与手持油茶振动采收机设计等项目，并在节能减排赛事中斩获省赛一等奖、国赛三等奖。
+                    </div>
+                </div>
+            </div>
+
+            <div class="member-item">
+                <img src="Hujing.jpg" alt="胡晶" class="member-photo">
+                <div class="member-info">
+                    <h3 class="member-name">胡晶</h3>
+                    <div class="member-desc">
+                        湖南农业大学在读本科生，研究方向为基于语义分割的油茶叶片病虫害识别。现阶段在课题组跟随老师参与本科科研竞赛，在项目实践中积累模型训练与部署相关经验。
+                    </div>
+                </div>
+            </div>
+
+            <div class="member-item">
+                <img src="Zhangfang.jpg" alt="张芳" class="member-photo">
+                <div class="member-info">
+                    <h3 class="member-name">张芳</h3>
+                    <div class="member-desc">
+                        本科就读于湖南农业大学车辆工程专业，通过推免进入南京农业大学机械制造及其自动化专业开展硕士阶段研究。主要研究方向是机器视觉，拥有多项结构设计项目经历，探索机器视觉在农业工程中的应用。
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
