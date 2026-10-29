@@ -1,1 +1,136 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>负责人 | 郑洲洲课题组</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: "Microsoft YaHei", "PingFang SC", -apple-system, sans-serif; line-height: 1.8; color: #333; background-color: #f8f9fa; }
+        a { color: #1a73e8; text-decoration: none; }
+        a:hover { text-decoration: underline; }
 
+        header { background-color: #ffffff; position: sticky; top: 0; z-index: 100; box-shadow: 0 2px 4px rgba(0,0,0,0.05); }
+        .nav-container { max-width: 1200px; margin: 0 auto; padding: 15px 30px; display: flex; justify-content: space-between; align-items: center; }
+        .logo { font-size: 1.3em; font-weight: 700; color: #222; display: flex; align-items: center; }
+        nav ul { list-style: none; display: flex; gap: 20px; flex-wrap: wrap;}
+        nav a { color: #333; font-size: 0.95em; font-weight: 500; transition: color 0.2s; }
+        nav a:hover, nav a.active { color: #c8232c; text-decoration: none; }
+
+        .main-container { max-width: 1000px; margin: 50px auto; padding: 0 30px; }
+        .page-title { font-size: 48px; font-weight: 700; color: #222; border-left: 8px solid #e5231b; padding-left: 15px; margin-bottom: 50px; line-height: 1.2; }
+        
+        .team-section { margin-bottom: 60px; }
+        .member-item { display: flex; gap: 40px; margin-bottom: 60px; }
+        .member-photo { flex: 0 0 220px; height: 280px; border-radius: 8px; object-fit: cover; box-shadow: 0 4px 10px rgba(0,0,0,0.1); background-color: #eaeaea;}
+        .member-info { flex: 1; }
+        
+        .name-wrapper { display: flex; align-items: baseline; margin-bottom: 15px; flex-wrap: wrap;}
+        .member-name { font-size: 1.8em; font-weight: 600; color: #333; margin-right: 15px; }
+        .homepage-link { font-size: 0.5em; font-weight: normal; background-color: #eef2f5; padding: 4px 10px; border-radius: 4px; border: 1px solid #ddd; transition: all 0.2s; }
+        .homepage-link:hover { background-color: #1a73e8; color: #fff; text-decoration: none; }
+        
+        .member-desc { color: #555; font-size: 1.05em; line-height: 1.9; text-align: justify; margin-bottom: 20px;}
+        .member-desc p { margin-bottom: 10px; }
+
+        .contact-row { display: flex; flex-wrap: wrap; gap: 20px; font-size: 0.95em; color: #555; margin-top: 15px; padding-top: 15px; border-top: 1px dashed #ddd; }
+        .contact-item { display: flex; align-items: center; gap: 6px; }
+        .contact-item i { color: #222; font-size: 1.1em; }
+        .contact-item a { color: #555; }
+        .contact-item a:hover { color: #1a73e8; text-decoration: none;}
+
+        @media (max-width: 900px) {
+            .nav-container { flex-direction: column; padding: 15px; gap: 15px; }
+            nav ul { justify-content: center; gap: 10px; }
+            .member-item { flex-direction: column; gap: 20px; align-items: center; }
+            .member-photo { width: 220px; }
+            .member-info { text-align: center; }
+            .member-desc { text-align: left; }
+            .name-wrapper { justify-content: center; }
+            .contact-row { flex-direction: column; align-items: center; gap: 10px; }
+            .page-title { font-size: 36px; }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="nav-container">
+            <div class="logo"><span style="color: #c8232c; font-weight: 800; font-family: 'Times New Roman', serif; letter-spacing: 1px; margin-right: 8px;">HUNAU</span> 郑洲洲课题组</div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">首页</a></li>
+                    <li><a href="news.html">新闻</a></li>
+                    <li><a href="team.html">团队</a></li>
+                    <li><a href="leader.html" class="active">负责人</a></li>
+                    <li><a href="publications.html">论文</a></li>
+                    <li><a href="teaching.html">教学</a></li>
+                    <li><a href="dataset.html">数据集</a></li>
+                    <li><a href="certificates.html">证书</a></li>
+                    <li><a href="joinus.html">加入我们</a></li>
+                    <li><a href="../index.html" style="color: #1a73e8; font-weight: bold; margin-left: 10px;">English</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="main-container">
+        <h1 class="page-title">团队负责人</h1>
+
+        <div class="team-section">
+            
+            <div class="member-item">
+                <img src="Fulongsheng.jpg" alt="傅隆生" class="member-photo">
+                <div class="member-info">
+                    <div class="name-wrapper">
+                        <h3 class="member-name">傅隆生 教授</h3>
+                        <a href="https://smart-ag.github.io/" target="_blank" class="homepage-link"><i class="fas fa-globe"></i> 个人主页</a>
+                    </div>
+                    <div class="member-desc">
+                        <p>教授、博士生导师，入选国家级人才计划（智慧农业岗位）、陕西高校青年杰出人才，担任中科院一区Top期刊《Computers and Electronics in Agriculture》主编。</p>
+                        <p>主要研究方向为智慧农业技术与装备。针对果园进行全程智能化生产研究，研发了猕猴桃疏蕾、授粉、疏果、采收、剪枝等多功能作业机器人，以及果园智能测产、表型自动测量等App，被央视CCTV17等栏目专题报道。发表一作/通讯SCI论文62篇（ESI高被引论文8篇），连续入选全球前2%科学家榜单、爱思唯尔“中国高被引学者”榜单，授权中国发明专利14项。</p>
+                    </div>
+                    
+                    <div class="contact-row">
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i> 
+                            <a href="mailto:fulsh@nwafu.edu.cn">fulsh@nwafu.edu.cn</a> / 
+                            <a href="mailto:ls.fu@outlook.com">ls.fu@outlook.com</a>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-graduation-cap"></i> 
+                            <a href="https://scholar.google.com/citations?user=YQI1lIkAAAAJ&hl=en" target="_blank">Google Scholar</a>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fab fa-researchgate"></i> 
+                            <a href="https://www.researchgate.net/profile/Longsheng_Fu" target="_blank">ResearchGate</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="member-item">
+                <img src="Wumingliang.jpg" alt="吴明亮" class="member-photo">
+                <div class="member-info">
+                    <div class="name-wrapper">
+                        <h3 class="member-name">吴明亮 院长</h3>
+                        <a href="https://www.baidu.com/s?wd=吴明亮+湖南农业大学" target="_blank" class="homepage-link"><i class="fas fa-globe"></i> 个人主页</a>
+                    </div>
+                    <div class="member-desc">
+                        <p>博士，二级教授，博士生导师，现任湖南农业大学机电工程学院院长。农业农村部农作物生产全程机械化专家指导组成员，湖南省油菜产业技术体系机械岗位专家。</p>
+                        <p>专门从事油料作物机械化生产技术与装备研究。获湖南省科技进步二等奖4项，授权发明专利32项，发表论文65篇（SCI/EI收录23篇），制定标准1项，出版著作（教材）6本。2016-2017年在美国德州农工大学从事高级访问学者。</p>
+                    </div>
+                    
+                    <div class="contact-row">
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i> 
+                            <a href="mailto:mlwu@hunau.edu.cn">mlwu@hunau.edu.cn</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</body>
+</html>
