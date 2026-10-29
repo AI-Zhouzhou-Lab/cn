@@ -1,1 +1,162 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>郑洲洲 | 湖南农业大学</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: "Microsoft YaHei", "PingFang SC", -apple-system, sans-serif; line-height: 1.8; color: #333; background-color: #f8f9fa; }
+        a { color: #1a73e8; text-decoration: none; }
+        a:hover { text-decoration: underline; }
 
+        /* 导航栏 */
+        header { background-color: #ffffff; position: sticky; top: 0; z-index: 100; box-shadow: 0 2px 4px rgba(0,0,0,0.05); }
+        .nav-container { max-width: 1200px; margin: 0 auto; padding: 15px 30px; display: flex; justify-content: space-between; align-items: center; }
+        .logo { font-size: 1.3em; font-weight: 700; color: #222; display: flex; align-items: center; }
+        nav ul { list-style: none; display: flex; gap: 20px; flex-wrap: wrap;}
+        nav a { color: #333; font-size: 0.95em; font-weight: 500; transition: color 0.2s; }
+        nav a:hover, nav a.active { color: #c8232c; text-decoration: none; }
+
+        /* 主体布局 */
+        .main-container { max-width: 1100px; margin: 40px auto; padding: 0 30px; display: flex; gap: 60px; align-items: flex-start; }
+        .sidebar { flex: 0 0 280px; position: sticky; top: 100px; }
+        .profile-img { width: 100%; border: 1px solid #eaeaea; padding: 5px; background-color: #fff; border-radius: 4px; box-shadow: 0 4px 10px rgba(0,0,0,0.05); margin-bottom: 25px; display: block; object-fit: cover; aspect-ratio: 3/4; }
+        
+        .sidebar-info { list-style: none; margin-top: 20px; }
+        .sidebar-info li { margin-bottom: 15px; font-size: 0.95em; color: #555; display: flex; align-items: flex-start; line-height: 1.5; }
+        .sidebar-info .icon { width: 25px; margin-right: 10px; font-size: 1.1em; color: #222; text-align: center; flex-shrink: 0;}
+        .sidebar-info a { color: #555; }
+        .sidebar-info a:hover { color: #1a73e8; text-decoration: none; }
+
+        /* 右侧内容 */
+        .content { flex: 1; min-width: 0; }
+        .content h1 { font-size: 2em; font-weight: 700; color: #222; margin-bottom: 15px; }
+        .subtitle { font-size: 1.15em; color: #666; margin-bottom: 5px; }
+        .institution { font-size: 1.05em; color: #666; margin-bottom: 25px; }
+        .bio { font-size: 1.05em; color: #444; margin-bottom: 30px; text-align: justify; line-height: 1.9; }
+        .content h2 { font-size: 1.2em; font-weight: 700; color: #222; margin-bottom: 20px; }
+        .interest-list { list-style: none; margin-bottom: 40px; }
+        .interest-list li { margin-bottom: 12px; position: relative; padding-left: 25px; color: #444; font-size: 1.05em; }
+        .interest-list li::before { content: "▶"; position: absolute; left: 0; top: 2px; color: #888; font-size: 0.8em; }
+
+        /* 滑动相册 */
+        .photo-gallery { margin-bottom: 50px; }
+        .photo-scroll-container { display: flex; overflow-x: auto; gap: 15px; padding-bottom: 10px; scroll-behavior: smooth; }
+        .photo-scroll-container::-webkit-scrollbar { height: 8px; }
+        .photo-scroll-container::-webkit-scrollbar-thumb { background: #ccc; border-radius: 4px; }
+        .photo-scroll-container::-webkit-scrollbar-track { background: #f1f1f1; }
+        .photo-scroll-item { flex: 0 0 auto; height: 220px; border-radius: 4px; object-fit: cover; box-shadow: 0 2px 5px rgba(0,0,0,0.1); background-color: #000; }
+        .scroll-hint { text-align: center; color: #888; font-size: 0.9em; margin-top: 10px; display: flex; align-items: center; justify-content: center; gap: 8px; }
+
+        /* 招生板块 */
+        .recruit-section { border-top: 1px solid #eaeaea; padding-top: 30px; }
+        .recruit-title { font-size: 1.8em; font-weight: 700; color: #222; border-left: 6px solid #e5231b; padding-left: 12px; margin-bottom: 25px; line-height: 1.2; }
+        .recruit-subtitle { font-size: 1.1em; font-weight: 700; color: #222; margin-bottom: 15px; }
+        .recruit-text { font-size: 1.05em; color: #555; line-height: 1.9; margin-bottom: 20px; text-align: justify; }
+        .scholarship-title { font-size: 1.05em; color: #777; margin-bottom: 15px; margin-top: 20px; font-weight: 600;}
+        
+        .scholarship-row { display: flex; align-items: flex-start; margin-bottom: 15px; font-size: 1.05em; line-height: 1.6; }
+        .scholarship-degree { flex: 0 0 150px; font-weight: 600; color: #333; }
+        .scholarship-links { color: #444; }
+
+        /* 移动端适配 */
+        @media (max-width: 900px) {
+            .nav-container { flex-direction: column; padding: 15px; gap: 15px; }
+            nav ul { justify-content: center; gap: 10px; }
+            .main-container { flex-direction: column; gap: 40px; margin-top: 20px; }
+            .sidebar { flex: auto; position: static; width: 100%; max-width: 300px; margin: 0 auto; }
+            .content h1 { font-size: 1.8em; }
+            .scholarship-row { flex-direction: column; gap: 5px; }
+            .scholarship-degree { flex: none; }
+            .photo-scroll-item { height: 160px; }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="nav-container">
+            <div class="logo"><span style="color: #c8232c; font-weight: 800; font-family: 'Times New Roman', serif; letter-spacing: 1px; margin-right: 8px;">HUNAU</span> 郑洲洲课题组</div>
+            <nav>
+                <ul>
+                    <li><a href="index.html" class="active">首页</a></li>
+                    <li><a href="news.html">新闻</a></li>
+                    <li><a href="team.html">团队</a></li>
+                    <li><a href="leader.html">负责人</a></li>
+                    <li><a href="publications.html">论文</a></li>
+                    <li><a href="teaching.html">教学</a></li>
+                    <li><a href="dataset.html">数据集</a></li>
+                    <li><a href="certificates.html">证书</a></li>
+                    <li><a href="joinus.html">加入我们</a></li>
+                    <li><a href="../index.html" style="color: #1a73e8; font-weight: bold; margin-left: 10px;">English</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="main-container">
+        <aside class="sidebar">
+            <img src="zheng.jpg" alt="郑洲洲" class="profile-img">
+            <ul class="sidebar-info">
+                <li><span class="icon"><i class="fa-brands fa-google"></i></span> <a href="https://scholar.google.com/citations?user=hQRJr38AAAAJ&hl=en" target="_blank">Google Scholar</a></li>
+                <li><span class="icon"><i class="fa-brands fa-orcid"></i></span> <a href="https://orcid.org/0000-0002-0822-1436" target="_blank">ORCID</a></li>
+                <li><span class="icon"><i class="fa-solid fa-envelope"></i></span> <a href="mailto:zhengzz@hunau.edu.cn">zhengzz@hunau.edu.cn</a></li>
+                <li><span class="icon"><i class="fa-solid fa-location-dot"></i></span> 湖南省长沙市湖南农业大学机电工程学院</li>
+            </ul>
+        </aside>
+
+        <main class="content">
+            <h1>郑洲洲，博士</h1>
+            <p class="subtitle">硕士生导师</p>
+            <p class="institution">湖南农业大学机电工程学院</p>
+            <div class="bio">
+                本人系<a href="https://www.hunau.edu.cn/" target="_blank">湖南农业大学</a>机电工程学院讲师。2025年于西北农林科技大学机械与电子工程学院获博士学位。2023年至2024年，获国家留学基金委（CSC）资助，赴加拿大<a href="https://www.mcgill.ca/" target="_blank">麦吉尔大学</a>进行博士联合培养。主要研究方向为开发并应用创新的传感技术与人工智能计算方法，以解决下一代智慧农业面临的挑战，尤其聚焦于果园采摘机器人领域。
+            </div>
+            
+            <h2>具体研究方向包括：</h2>
+            <ul class="interest-list">
+                <li>果园采摘机器人与信息感知技术。</li>
+                <li>多模态融合与先进传感器。</li>
+                <li>基于深度学习的果树表型解析。</li>
+                <li>果树振动采收机理。</li>
+                <li>农业机器人与采收装备。</li>
+            </ul>
+
+            <div class="photo-gallery">
+                <div class="photo-scroll-container">
+                    <video src="lab_video1.mp4" class="photo-scroll-item" controls muted playsinline autoplay loop></video>
+                    <video src="lab_video2.mp4" class="photo-scroll-item" controls muted playsinline></video>
+                    <video src="lab_video3.mp4" class="photo-scroll-item" controls muted playsinline></video>
+                    <video src="lab_video4.mp4" class="photo-scroll-item" controls muted playsinline></video>
+                </div>
+                <div class="scroll-hint">
+                    <i class="fas fa-arrows-alt-h"></i> 左右滑动查看更多
+                </div>
+            </div>
+
+            <div class="recruit-section">
+                <h2 class="recruit-title">招生招聘</h2>
+                <p class="recruit-subtitle">面向有意向的学生 / 博士后</p>
+                <p class="recruit-text">
+                   课题组正积极招募具有农业工程、农业机器人、机器视觉和深度学习背景的优秀硕士、博士研究生及科研实习生。此外，我们热烈欢迎对机器人、自动控制及图像识别感兴趣的本科生加入。进组后，你不仅能获得农业机器人开发的实操经验，还有机会参与重大科技竞赛、获得综测加分，并大幅提升你的保研/考研简历竞争力。如果你对我们的研究感兴趣，请发送<a href="mailto:zhengzz@hunau.edu.cn">邮件</a>给我，邮件主题请注明“意向博士/硕士学生 [你的姓名]”，或通过<a href="https://www.hunau.edu.cn/" target="_blank">湖南农业大学</a>系统申请并在申请中提及我。由于邮件量较大，若未能一一回复敬请谅解。
+                </p>
+                
+                <p class="scholarship-title">导师信息 :</p>
+                <div class="scholarship-row">
+                    <div class="scholarship-degree">博士导师 :</div>
+                    <div class="scholarship-links"><a href="leader.html">傅隆生 教授</a></div>
+                </div>
+                <div class="scholarship-row">
+                    <div class="scholarship-degree">硕士导师 :</div>
+                    <div class="scholarship-links"><a href="leader.html">傅隆生 教授</a> 与 郑洲洲 博士</div>
+                </div>
+                <div class="scholarship-row">
+                    <div class="scholarship-degree">本科生导师 :</div>
+                    <div class="scholarship-links">郑洲洲 博士</div>
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+</html>
