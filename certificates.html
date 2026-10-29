@@ -1,1 +1,98 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>证书 | 郑洲洲课题组</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: "Microsoft YaHei", "PingFang SC", -apple-system, sans-serif; line-height: 1.8; color: #333; background-color: #f8f9fa; }
+        header { background-color: #ffffff; position: sticky; top: 0; z-index: 100; box-shadow: 0 2px 4px rgba(0,0,0,0.05); }
+        .nav-container { max-width: 1200px; margin: 0 auto; padding: 15px 30px; display: flex; justify-content: space-between; align-items: center; }
+        .logo { font-size: 1.3em; font-weight: 700; color: #222; display: flex; align-items: center; }
+        nav ul { list-style: none; display: flex; gap: 20px; flex-wrap: wrap;}
+        nav a { color: #333; font-size: 0.95em; font-weight: 500; transition: color 0.2s; }
+        nav a:hover, nav a.active { color: #c8232c; text-decoration: none; }
 
+        .main-container { max-width: 1000px; margin: 50px auto; padding: 0 30px; }
+        .page-title { font-size: 48px; font-weight: 700; color: #222; border-left: 8px solid #e5231b; padding-left: 15px; margin-bottom: 50px; line-height: 1.2; }
+        
+        .team-section { margin-bottom: 60px; }
+        .section-header { display: flex; align-items: center; border-bottom: 2px solid #e5231b; padding-bottom: 10px; margin-bottom: 30px; }
+        .section-header i { color: #e5231b; font-size: 1.5em; margin-right: 15px; }
+        .section-header h2 { font-size: 1.8em; font-weight: 700; color: #222; margin-right: 15px; }
+
+        .cert-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 30px; }
+        .cert-item { background-color: #fff; padding: 10px; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.06); transition: transform 0.2s; }
+        .cert-item:hover { transform: translateY(-5px); }
+        .cert-img { width: 100%; height: auto; border-radius: 4px; display: block; }
+
+        @media (max-width: 900px) {
+            .nav-container { flex-direction: column; padding: 15px; gap: 15px; }
+            nav ul { justify-content: center; gap: 10px; }
+            .page-title { font-size: 36px; }
+            .cert-grid { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="nav-container">
+            <div class="logo"><span style="color: #c8232c; font-weight: 800; font-family: 'Times New Roman', serif; letter-spacing: 1px; margin-right: 8px;">HUNAU</span> 郑洲洲课题组</div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">首页</a></li>
+                    <li><a href="news.html">新闻</a></li>
+                    <li><a href="team.html">团队</a></li>
+                    <li><a href="leader.html">负责人</a></li>
+                    <li><a href="publications.html">论文</a></li>
+                    <li><a href="teaching.html">教学</a></li>
+                    <li><a href="dataset.html">数据集</a></li>
+                    <li><a href="certificates.html" class="active">证书</a></li>
+                    <li><a href="joinus.html">加入我们</a></li>
+                    <li><a href="../index.html" style="color: #1a73e8; font-weight: bold; margin-left: 10px;">English</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="main-container">
+        <h1 class="page-title">荣誉证书</h1>
+
+        <div class="team-section">
+            <div class="section-header">
+                <i class="fas fa-trophy"></i>
+                <h2>比赛/竞赛类</h2>
+            </div>
+            <div class="cert-grid">
+                <div class="cert-item">
+                    <img src="CompetitionsAwards1.jpg" alt="竞赛证书 1" class="cert-img">
+                </div>
+                <div class="cert-item">
+                    <img src="CompetitionsAwards2.jpg" alt="竞赛证书 2" class="cert-img">
+                </div>
+                <div class="cert-item">
+                    <img src="CompetitionsAwards3.jpg" alt="竞赛证书 3" class="cert-img">
+                </div>
+            </div>
+        </div>
+
+        <div class="team-section">
+            <div class="section-header">
+                <i class="fas fa-file-alt"></i>
+                <h2>科研成果类</h2>
+            </div>
+            <div class="cert-grid">
+                <div class="cert-item">
+                    <img src="https://via.placeholder.com/800x600?text=Research+Certificate+1" alt="科研证书 1" class="cert-img">
+                </div>
+                <div class="cert-item">
+                    <img src="https://via.placeholder.com/800x600?text=Research+Certificate+2" alt="科研证书 2" class="cert-img">
+                </div>
+            </div>
+        </div>
+        
+    </div>
+</body>
+</html>
