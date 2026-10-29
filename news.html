@@ -1,1 +1,153 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>新闻 | 郑洲洲课题组</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: "Microsoft YaHei", "PingFang SC", -apple-system, sans-serif; line-height: 1.8; color: #333; background-color: #f8f9fa; }
+        header { background-color: #ffffff; position: sticky; top: 0; z-index: 100; box-shadow: 0 2px 4px rgba(0,0,0,0.05); }
+        .nav-container { max-width: 1200px; margin: 0 auto; padding: 15px 30px; display: flex; justify-content: space-between; align-items: center; }
+        .logo { font-size: 1.3em; font-weight: 700; color: #222; display: flex; align-items: center; }
+        nav ul { list-style: none; display: flex; gap: 20px; flex-wrap: wrap;}
+        nav a { color: #333; font-size: 0.95em; font-weight: 500; transition: color 0.2s; }
+        nav a:hover, nav a.active { color: #c8232c; text-decoration: none; }
 
+        .main-container { max-width: 900px; margin: 60px auto; padding: 0 30px; }
+        .page-title { font-size: 48px; font-weight: 700; color: #222; border-left: 8px solid #e5231b; padding-left: 15px; margin-bottom: 60px; line-height: 1.2; letter-spacing: -0.5px; }
+        
+        .news-list { display: flex; flex-direction: column; gap: 45px; }
+        .news-item { display: flex; flex-direction: column; }
+        .news-date { font-size: 1.2em; font-weight: 600; color: #555; margin-bottom: 12px; padding-bottom: 8px; border-bottom: 2px solid #e5231b; letter-spacing: 0.5px; }
+        .news-card { background-color: #ffffff; border-radius: 8px; padding: 30px; box-shadow: 0 4px 15px rgba(0,0,0,0.04); font-size: 1.1em; color: #444; line-height: 1.9; text-align: justify; font-weight: 400; }
+        .news-card p { margin-bottom: 15px; }
+        .news-card p:last-child { margin-bottom: 0; }
+
+        @media (max-width: 900px) {
+            .nav-container { flex-direction: column; padding: 15px; gap: 15px; }
+            nav ul { justify-content: center; gap: 10px; }
+            .page-title { font-size: 36px; margin-bottom: 40px; }
+            .news-date { font-size: 1.1em; }
+            .news-card { padding: 20px; font-size: 1em; }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="nav-container">
+            <div class="logo"><span style="color: #c8232c; font-weight: 800; font-family: 'Times New Roman', serif; letter-spacing: 1px; margin-right: 8px;">HUNAU</span> 郑洲洲课题组</div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">首页</a></li>
+                    <li><a href="news.html" class="active">新闻</a></li>
+                    <li><a href="team.html">团队</a></li>
+                    <li><a href="leader.html">负责人</a></li>
+                    <li><a href="publications.html">论文</a></li>
+                    <li><a href="teaching.html">教学</a></li>
+                    <li><a href="dataset.html">数据集</a></li>
+                    <li><a href="certificates.html">证书</a></li>
+                    <li><a href="joinus.html">加入我们</a></li>
+                    <li><a href="../index.html" style="color: #1a73e8; font-weight: bold; margin-left: 10px;">English</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="main-container">
+        <h1 class="page-title">新闻动态</h1>
+        <div class="news-list">
+            
+            <div class="news-item">
+                <div class="news-date">2026-10</div>
+                <div class="news-card">
+                    <p>祝贺课题组研究生武雨洁、田文标、刘峻宇成功当选研究生学生会干部！这不仅是对大家综合能力与领导力的高度认可，也展现了团队成员全面发展的优秀风貌，期待你们在新的平台上发光发热。</p>
+                </div>
+            </div>
+
+            <div class="news-item">
+                <div class="news-date">2026-09</div>
+                <div class="news-card">
+                    <p>欢迎傅嘉辉加入我们的团队！你对油茶果振动采收机器人的钻研，将为我们的林果智能采收项目带来强大的技术保障。</p>
+                    <p>欢迎武雨洁加入我们的团队！你对农业计算机视觉与图像分割技术的专注，将为我们的油菜生长周期监测项目带来创新活力。</p>
+                    <p>祝贺本科生张芳成功推免至南京农业大学机械制造及其自动化专业开展硕士阶段研究！愿你在未来的学术道路上继续保持对科研的热爱与探索精神。</p>
+                    <p>团队负责人傅隆生教授对小组近期工作进行了全面指导，为后续的科研攻关和项目推进指明了方向，团队成员备受鼓舞。</p>
+                </div>
+            </div>
+
+            <div class="news-item">
+                <div class="news-date">2026-08</div>
+                <div class="news-card">
+                    <p>祝贺郑洲洲博士（通讯作者）及合作者的综述论文《A review of visual occlusion resolution in agricultural environments: Algorithms, applications, and future trends》在《Smart Agricultural Technology》期刊上发表！该综述系统总结了农业视觉遮挡的前沿算法，并对未来研究方向提供了深刻见解。</p>
+                </div>
+            </div>
+
+            <div class="news-item">
+                <div class="news-date">2026-08</div>
+                <div class="news-card">
+                    <p>祝贺团队本科生胡晶、李佳辰、张芳，在“大工能动杯”第十九届全国大学生节能减排社会实践与科技竞赛中斩获全国三等奖！该作品将低碳光伏驱动与油茶果智能计数相结合，充分展现了课题组学子在智慧农业与绿色低碳技术融合上的创新实践能力。</p>
+                </div>
+            </div>
+
+            <div class="news-item">
+                <div class="news-date">2026-07</div>
+                <div class="news-card">
+                    <p>欢迎周俊杰加入我们的团队！你对机械结构与振动采收装备的热情，将为破解我们的油茶果机械化采收难题带来新颖思路。</p>
+                    <p>欢迎田文标加入我们的团队！你对复杂环境下图像增强与视觉感知技术的钻研，将为我们实现钵苗精准栽植与地表特征识别带来强大的技术保障。</p>
+                </div>
+            </div>
+
+            <div class="news-item">
+                <div class="news-date">2026-06</div>
+                <div class="news-card">
+                    <p>欢迎刘峻宇加入我们的团队！你对ROS2系统与机械臂视觉协同的专长，将为我们的智能采摘机器人研发注入强劲的技术动能。</p>
+                </div>
+            </div>
+
+            <div class="news-item">
+                <div class="news-date">2026-04</div>
+                <div class="news-card">
+                    <p>祝贺郑彬同学的论文《Autonomous Navigation of Orchard Harvesting Robot via Light-weight Salient Object Detection》在中科院二区期刊正式发表！该研究为果园采摘机器人的轻量化视觉感知与自主导航提供了创新方案。</p>
+                </div>
+            </div>
+
+            <div class="news-item">
+                <div class="news-date">2025-09</div>
+                <div class="news-card">
+                    <p>欢迎郑彬加入我们的团队！你对计算机视觉和深度学习技术的热情，将为我们的植物智能识别与估产研究带来新鲜视角。</p>
+                    <p>欢迎陈标加入我们的团队！你对油茶果振动脱落机理的探索，将为我们的手持式采收装置优化带来全新的工程视角。</p>
+                </div>
+            </div>
+
+            <div class="news-item">
+                <div class="news-date">2025-06</div>
+                <div class="news-card">
+                    <p>郑洲洲博士的博士学位论文荣获西北农林科技大学“校优秀博士学位论文”。</p>
+                </div>
+            </div>
+
+            <div class="news-item">
+                <div class="news-date">2024-12</div>
+                <div class="news-card">
+                    <p>郑洲洲博士圆满完成国家建设高水平大学公派研究生项目，结束在加拿大麦吉尔大学生物资源工程系为期一年的博士联合培养，按期回国。</p>
+                </div>
+            </div>
+
+            <div class="news-item">
+                <div class="news-date">2024-06</div>
+                <div class="news-card">
+                    <p>课题组论文《AGHRNet: An attention ghost-HRNet for confirmation of catch-and-shake locations in jujube fruits vibration harvesting》入选ESI高被引论文。该研究在冬枣振动采收关键区域视觉感知方面取得重要进展。</p>
+                </div>
+            </div>
+
+            <div class="news-item">
+                <div class="news-date">2022-01</div>
+                <div class="news-card">
+                    <p>课题组参与的国家重点研发计划课题“枣和香榧优质高产新品种创制与精准栽培技术（2022YFD2200404）”正式启动，项目周期为2022年至2027年。</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
