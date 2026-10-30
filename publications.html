@@ -40,7 +40,21 @@
         .pub-meta { display: flex; flex-wrap: wrap; gap: 20px; color: #666; font-size: 0.95em; }
         .meta-item { display: flex; align-items: center; gap: 6px; }
         .meta-item i { color: #888; font-size: 0.9em; }
-        .highlight { background-color: #ffeeba; color: #856404; padding: 2px 6px; border-radius: 3px; font-size: 0.75em; font-weight: bold; vertical-align: middle; margin-left: 8px; }
+        
+        /* ====== 彩色高亮标签样式 ====== */
+        .tag {
+            padding: 2px 8px;
+            border-radius: 4px;
+            font-size: 0.75em;
+            font-weight: bold;
+            vertical-align: middle;
+            margin-left: 8px;
+            display: inline-block;
+        }
+        .tag-q1 { background-color: #fef08a; color: #854d0e; border: 1px solid #fde047; } /* 一区：亮黄 */
+        .tag-q2 { background-color: #dbeafe; color: #1e40af; border: 1px solid #bfdbfe; } /* 二区：浅蓝 */
+        .tag-hc { background-color: #ffedd5; color: #9a3412; border: 1px solid #fed7aa; } /* 高被引：浅橙 */
+        .tag-ei { background-color: #e5e7eb; color: #374151; border: 1px solid #d1d5db; } /* EI：浅灰 */
 
         @media (max-width: 900px) {
             .nav-container { flex-direction: column; padding: 15px; gap: 15px; }
@@ -52,6 +66,7 @@
             .col-info { padding: 10px 25px 20px 25px; }
             .pub-meta { flex-direction: column; gap: 8px; }
             .page-title { font-size: 36px; }
+            .tag { margin-left: 0; margin-top: 5px; display: block; width: fit-content; }
         }
     </style>
 </head>
@@ -80,7 +95,6 @@
         <h1 class="page-title">学术论文</h1>
         <p class="subtitle">欢迎访问我们的 <a href="https://scholar.google.com/citations?user=hQRJr38AAAAJ&hl=en" target="_blank">Google Scholar</a> 主页获取最新成果。</p>
         
-        <!-- 数量更新为 12 -->
         <h2 class="section-title">期刊论文 <span>( 12 )</span></h2>
         
         <div class="pub-table">
@@ -92,7 +106,7 @@
             <div class="pub-row">
                 <div class="col-no">12</div>
                 <div class="col-info">
-                    <a href="https://doi.org/10.1016/j.atech.2026.102504" target="_blank" class="pub-title">A review of visual occlusion resolution in agricultural environments: Algorithms, applications, and future trends</a>
+                    <a href="https://doi.org/10.1016/j.atech.2026.102504" target="_blank" class="pub-title">A review of visual occlusion resolution in agricultural environments: Algorithms, applications, and future trends <span class="tag tag-q2">中科院二区</span></a>
                     <div class="pub-meta">
                         <span class="meta-item"><i class="fas fa-user"></i> Haiyang Chen, Mingliang Wu, Wei Quan, Xiaohu Jiang, Fanggang Shi, <strong>Zhouzhou Zheng*</strong></span>
                         <span class="meta-item"><i class="fas fa-bookmark"></i> Smart Agricultural Technology</span>
@@ -104,7 +118,7 @@
             <div class="pub-row">
                 <div class="col-no">11</div>
                 <div class="col-info">
-                    <a href="#" class="pub-title">Autonomous Navigation of Orchard Harvesting Robot via Light-weight Salient Object Detection</a>
+                    <a href="#" class="pub-title">Autonomous Navigation of Orchard Harvesting Robot via Light-weight Salient Object Detection <span class="tag tag-q2">中科院二区</span></a>
                     <div class="pub-meta">
                         <span class="meta-item"><i class="fas fa-user"></i> <strong>Zheng Zhouzhou</strong>, Zheng Bin, Tang Lewei*, et al.</span>
                         <span class="meta-item"><i class="fas fa-bookmark"></i> Smart Agricultural Technology</span>
@@ -116,10 +130,10 @@
             <div class="pub-row">
                 <div class="col-no">10</div>
                 <div class="col-info">
-                    <a href="#" class="pub-title">抓摇式设施冬枣摘熟留青振动采收装置参数优化与试验</a>
+                    <a href="#" class="pub-title">抓摇式设施冬枣摘熟留青振动采收装置参数优化与试验 <span class="tag tag-ei">EI</span></a>
                     <div class="pub-meta">
                         <span class="meta-item"><i class="fas fa-user"></i> <strong>郑洲洲</strong>, 胡耀华, 赵鹏飞, 董建鑫, 黄玉祥*</span>
-                        <span class="meta-item"><i class="fas fa-bookmark"></i> 农业机械学报 (EI)</span>
+                        <span class="meta-item"><i class="fas fa-bookmark"></i> 农业机械学报</span>
                         <span class="meta-item"><i class="fas fa-calendar-alt"></i> 2025</span>
                     </div>
                 </div>
@@ -128,7 +142,7 @@
             <div class="pub-row">
                 <div class="col-no">9</div>
                 <div class="col-info">
-                    <a href="#" class="pub-title">Graph Transformer with spatial-spectral features fusion for hyperspectral image classification</a>
+                    <a href="#" class="pub-title">Graph Transformer with spatial-spectral features fusion for hyperspectral image classification <span class="tag tag-q1">中科院一区top</span></a>
                     <div class="pub-meta">
                         <span class="meta-item"><i class="fas fa-user"></i> <strong>Zheng Zhouzhou</strong>, Sun Shangpeng, Huang Yuxiang*, et al.</span>
                         <span class="meta-item"><i class="fas fa-bookmark"></i> Expert Systems with Applications</span>
@@ -140,7 +154,7 @@
             <div class="pub-row">
                 <div class="col-no">8</div>
                 <div class="col-info">
-                    <a href="#" class="pub-title">Characterising vibration patterns of winter jujube trees to optimise automated fruit harvesting</a>
+                    <a href="#" class="pub-title">Characterising vibration patterns of winter jujube trees to optimise automated fruit harvesting <span class="tag tag-q1">中科院一区top</span></a>
                     <div class="pub-meta">
                         <span class="meta-item"><i class="fas fa-user"></i> <strong>Zheng Zhouzhou</strong>, Sun Shangpeng, Huang Yuxiang*, et al.</span>
                         <span class="meta-item"><i class="fas fa-bookmark"></i> Biosystems Engineering</span>
@@ -152,7 +166,7 @@
             <div class="pub-row">
                 <div class="col-no">7</div>
                 <div class="col-info">
-                    <a href="#" class="pub-title">A novel jujube tree trunk and branch salient object detection method for catch-and-shake robotic visual perception</a>
+                    <a href="#" class="pub-title">A novel jujube tree trunk and branch salient object detection method for catch-and-shake robotic visual perception <span class="tag tag-q1">中科院一区top</span></a>
                     <div class="pub-meta">
                         <span class="meta-item"><i class="fas fa-user"></i> <strong>Zheng Zhouzhou</strong>, Sun Shangpeng, Huang Yuxiang*, et al.</span>
                         <span class="meta-item"><i class="fas fa-bookmark"></i> Expert Systems with Applications</span>
@@ -164,7 +178,7 @@
             <div class="pub-row">
                 <div class="col-no">6</div>
                 <div class="col-info">
-                    <a href="#" class="pub-title">Vibration response characteristics of Jujube trees based on finite element method and structure-from-motion</a>
+                    <a href="#" class="pub-title">Vibration response characteristics of Jujube trees based on finite element method and structure-from-motion <span class="tag tag-q2">中科院二区top</span></a>
                     <div class="pub-meta">
                         <span class="meta-item"><i class="fas fa-user"></i> Hu Yaohua*, <strong>Zheng Zhouzhou*</strong>, Yu Chenhao, et al.</span>
                         <span class="meta-item"><i class="fas fa-bookmark"></i> Scientia Horticulturae</span>
@@ -173,11 +187,10 @@
                 </div>
             </div>
 
-            <!-- 新增的论文 -->
             <div class="pub-row">
                 <div class="col-no">5</div>
                 <div class="col-info">
-                    <a href="#" class="pub-title">Autonomous navigation method of jujube catch-and-shake harvesting robot based on convolutional neural networks <span class="highlight">中科院一区top</span></a>
+                    <a href="#" class="pub-title">Autonomous navigation method of jujube catch-and-shake harvesting robot based on convolutional neural networks <span class="tag tag-q1">中科院一区top</span></a>
                     <div class="pub-meta">
                         <span class="meta-item"><i class="fas fa-user"></i> <strong>Zheng Zhouzhou</strong>, Hu Yaohua, Huang Yuxiang*, et al.</span>
                         <span class="meta-item"><i class="fas fa-bookmark"></i> Computers and Electronics in Agriculture</span>
@@ -189,7 +202,7 @@
             <div class="pub-row">
                 <div class="col-no">4</div>
                 <div class="col-info">
-                    <a href="#" class="pub-title">AGHRNet: An attention ghost-HRNet for confirmation of catch-and-shake locations in jujube fruits vibration harvesting <span class="highlight">高被引</span></a>
+                    <a href="#" class="pub-title">AGHRNet: An attention ghost-HRNet for confirmation of catch-and-shake locations in jujube fruits vibration harvesting <span class="tag tag-q1">中科院一区top</span> <span class="tag tag-hc">高被引</span></a>
                     <div class="pub-meta">
                         <span class="meta-item"><i class="fas fa-user"></i> <strong>Zheng Zhouzhou</strong>, Hu Yaohua, Huang Yuxiang*, et al.</span>
                         <span class="meta-item"><i class="fas fa-bookmark"></i> Computers and Electronics in Agriculture</span>
@@ -201,7 +214,7 @@
             <div class="pub-row">
                 <div class="col-no">3</div>
                 <div class="col-info">
-                    <a href="#" class="pub-title">AFFU-Net: Attention feature fusion U-Net with hybrid loss for winter jujube crack detection</a>
+                    <a href="#" class="pub-title">AFFU-Net: Attention feature fusion U-Net with hybrid loss for winter jujube crack detection <span class="tag tag-q1">中科院一区top</span></a>
                     <div class="pub-meta">
                         <span class="meta-item"><i class="fas fa-user"></i> <strong>Zheng Zhouzhou</strong>, Hu Yaohua, Huang Yuxiang*, et al.</span>
                         <span class="meta-item"><i class="fas fa-bookmark"></i> Computers and Electronics in Agriculture</span>
@@ -213,7 +226,7 @@
             <div class="pub-row">
                 <div class="col-no">2</div>
                 <div class="col-info">
-                    <a href="#" class="pub-title">Real-time detection of winter jujubes based on improved YOLOX-nano network</a>
+                    <a href="#" class="pub-title">Real-time detection of winter jujubes based on improved YOLOX-nano network <span class="tag tag-q2">中科院二区</span></a>
                     <div class="pub-meta">
                         <span class="meta-item"><i class="fas fa-user"></i> <strong>Zheng Zhouzhou</strong>, Hu Yaohua, Huang Yuxiang*, et al.</span>
                         <span class="meta-item"><i class="fas fa-bookmark"></i> Remote Sensing</span>
@@ -225,7 +238,7 @@
             <div class="pub-row">
                 <div class="col-no">1</div>
                 <div class="col-info">
-                    <a href="#" class="pub-title">HLU²-Net: a residual U-structure embedded U-Net with hybrid loss for tire defect inspection</a>
+                    <a href="#" class="pub-title">HLU²-Net: a residual U-structure embedded U-Net with hybrid loss for tire defect inspection <span class="tag tag-q2">中科院二区top</span></a>
                     <div class="pub-meta">
                         <span class="meta-item"><i class="fas fa-user"></i> <strong>Zheng Zhouzhou</strong>, Yang Huanbo, Zhang Yan*, et al.</span>
                         <span class="meta-item"><i class="fas fa-bookmark"></i> IEEE Transactions on Instrumentation and Measurement</span>
